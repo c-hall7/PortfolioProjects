@@ -1,30 +1,30 @@
-# 🎮 Video Game Sales Analysis
+# 🎮 Video Game Sales Analysis (Portfolio Project)
 
 ## 📌 Project Overview
 
-This project explores video game sales data to identify patterns in regional preferences, genre popularity, console generation performance, and the relationship between review scores and commercial success.
+This project explores video game sales data with regional sales performance data to identify patterns such as regional preferences, genre popularity, console generation performance, and the possible relationship between review scores and commercial success.
 
-The analysis was completed using Python and focuses on practical data analyst workflows including:
+The analysis was completed using Python on Jupyter Notebook and focuses on practical data analyst workflows including:
 - data cleaning,
 - exploratory data analysis (EDA),
 - data visualization,
 - and insight communication.
 
-The goal of this project was to strengthen real-world analytical skills while building a professional data analytics portfolio.
+The goal of this project was to learn/strengthen my real-world analytical skills while building a professional data analytics portfolio.
 
 ---
 
 ## 📊 Dataset
 
-Source: Kaggle — Video Game Sales with Ratings Dataset
+Source: Kaggle — [Video Game Sales with Ratings Dataset](https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings/data)
 
 The dataset contains information on:
 - Video game sales across multiple regions
+- Release years and genres
 - Critic and user review scores
 - ESRB ratings
 - Publishers and platforms
-- Release years and genres
-
+  
 ---
 
 ## 🛠️ Tools & Libraries Used
@@ -51,27 +51,28 @@ The dataset contains information on:
 
 ## 🔍 Key Questions Explored
 
-### 1. What are the top-selling games in each region?
+### 1. What are the top selling games for each region?
 - Compared regional sales performance
 - Investigated whether game age influenced sales trends
 
-### 2. Which genres are the most popular?
+### 2. Which genres are the most popular? Are there regions that enjoy certain genres more than others?
 - Analyzed global genre popularity
 - Compared genre preferences across regions
 
-### 3. How do game sales change across console generations?
+### 3. Are console sales rising or falling with each generation?
 - Examined sales trends between PlayStation generations
 - Investigated lifecycle patterns of gaming platforms
 
-### 4. Is there a relationship between critic scores and sales?
-- Created correlation analysis between review scores and global sales
+### 4. Is there a correlation between critic scores and sales?
+- Created correlation analysis between critic review scores and global sales
 - Investigated how strongly reviews relate to commercial success
 
-### 5. Do publishers influence commercial performance?
+### 5. Does the publisher effect the game's success?
 - Compared total and average sales across publishers
 - Explored differences between publisher scale and per-title success
+- Removed publishers with less than 10 games to reduce inaccurate results
 
-### 6. Does ESRB rating impact game sales?
+### 6. Does the game's ESRB (maturity) rating effect sales?
 - Compared sales performance across maturity ratings
 - Grouped rare ESRB categories to reduce statistical noise
 
@@ -80,10 +81,11 @@ The dataset contains information on:
 ## 📈 Key Insights
 
 - Video game sales are highly right-skewed, with a small number of blockbuster titles dominating total revenue.
-- Action and Sports games generated the highest global sales overall.
-- Regional preferences differ significantly, with Japan showing stronger interest in RPG titles compared to North America and Europe.
+- Action and Sports games generated the highest global sales overall, however, Platform and Shooter games faired best per title.
+- Regional preferences differ significantly, with Japan showing stronger interest in Role-Playing titles compared to North America and Europe.
 - Console generations appear to follow a lifecycle pattern, where sales peak mid-generation before declining after the release of newer hardware.
-- Critic scores show a moderate positive correlation with sales, although reviews alone do not determine commercial success.
+- Critic scores show a moderate positive correlation with sales, however, the relationship is not strong enough to imply causation.
+- Publishers which have the highest global sales were absent in average sales per game, showing that publisher size does not lead to individual title success. 
 - Mature-rated games often produced higher sales totals, likely influenced by major AAA franchises.
 
 ---
@@ -93,19 +95,4 @@ The dataset contains information on:
 - Missing review score data reduced sample sizes for some analyses.
 - Sales distributions were heavily skewed by blockbuster games.
 - Correlation analysis was limited to true numerical variables to avoid misleading categorical correlations.
-- The dataset does not include external factors such as marketing budgets, development costs, or digital storefront data.
-
----
-
-## 📁 Repository Structure
-
-```text
-Video-Game-Sales-Analysis/
-│
-├── data/
-│   └── vgsales.csv
-│
-├── notebook/
-│   └── analysis.ipynb
-│
-└── README.md
+- The dataset does not include external factors such as marketing budgets, development costs, or game pricing.
