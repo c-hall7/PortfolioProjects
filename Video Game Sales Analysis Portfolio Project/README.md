@@ -7,7 +7,7 @@ This project explores video game sales data with regional sales performance data
 The analysis was completed using Python on Jupyter Notebook and focuses on practical data analyst workflows including:
 - data cleaning,
 - exploratory data analysis (EDA),
-- data visualization,
+- data visualisation,
 - and insight communication.
 
 The goal of this project was to learn/strengthen my real-world analytical skills while building a professional data analytics portfolio.
@@ -43,7 +43,7 @@ The dataset contains information on:
 - Missing Value Handling
 - Exploratory Data Analysis
 - Correlation Analysis
-- Data Visualization
+- Data Visualisation
 - Trend Analysis
 - Insight Communication
 
@@ -56,7 +56,7 @@ The dataset contains information on:
 - Investigated whether game age influenced sales trends
 
 ### 2. Which genres are the most popular? Are there regions that enjoy certain genres more than others?
-- Analyzed global genre popularity
+- Analysed global genre popularity
 - Compared genre preferences across regions
 
 ### 3. Are console sales rising or falling with each generation?
