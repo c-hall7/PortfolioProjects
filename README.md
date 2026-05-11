@@ -1,2 +1,2 @@
 # PortfolioProjects
-This repository contains data analyst portfolio projects, showcasing my skills in SQL, PowerBI, and Python
+This repository contains my data analyst portfolio projects, showcasing my skills in SQL, PowerBI, and Python
