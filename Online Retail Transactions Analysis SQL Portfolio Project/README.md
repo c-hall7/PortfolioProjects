@@ -54,7 +54,13 @@ The dataset contains information on:
 
 ## 🧹 Data Cleaning & Preparation
 
-The raw dataset contained:
+There are two data files in the "Data" folder:
+- online_retail dataset.zip (the downloaded file)
+- OnlineRetail_Cleaned.zip (the cleaned file)
+
+The downloaded file used values in the InvoiceDate that were not SQLite friendly, so I used Python to convert the values and save a new, cleaned data file, and used this new file for the remainder of the project. 
+
+The raw dataset also contained:
 - cancellation transactions,
 - stock adjustments,
 - inconsistent product descriptions,
@@ -64,7 +70,6 @@ The raw dataset contained:
 To improve analytical accuracy, multiple SQL views were created including:
 - `Clean_Sales`
 - `Returns_Transactions`
-- `Invalid_Transactions`
 
 The cleaning process involved:
 - separating cancellation and return activity,
@@ -77,21 +82,20 @@ The cleaning process involved:
 
 ## 🔍 Key Questions Explored
 
-### 1. Which countries generated the highest sales revenue?
-- Analysed total revenue contribution by country
-- Compared UK sales performance against international markets
-- Investigated geographical sales concentration
-
-### 2. Which products generated the highest revenue?
+### 1. Which products performed the best (and worst) by units sold and total revenue?
 - Identified top-performing retail products
 - Removed non-physical operational entries such as postage and manual adjustments
-- Investigated outlier transactions and bulk order behaviour
+- Identified outlier transactions and bulk order behaviour
 
-### 3. What customer purchasing patterns can be identified?
+### 2. What customer purchasing patterns can be identified?
 - Analysed top customers by total spend
 - Calculated average order value (AOV)
 - Compared repeat vs non-repeat customers
-- Explored customer spending behaviour and order frequency
+
+### 3. Which countries generated the highest sales revenue?
+- Analysed total revenue contribution by country
+- Compared UK sales performance against international markets
+- Compared customer population of countries
 
 ### 4. How do sales trends change over time?
 - Created monthly revenue analysis
@@ -105,23 +109,16 @@ The cleaning process involved:
 - Explored the impact of bulk return outliers
 - Compared return frequency against return volume
 
-### 6. How can SQL window functions improve analytical insight?
-- Used `LAG()` for time-series comparisons
-- Applied rolling averages for trend smoothing
-- Used ranking functions for customer and product analysis
-- Built reusable analytical layers using CTEs and SQL views
-
 ---
 
 ## 📈 Key Insights
 
 - Sales revenue was heavily concentrated within the United Kingdom, contributing the majority of total sales activity.
 - Customer spending was highly skewed, with a relatively small number of customers contributing a disproportionately large share of total revenue.
-- Return and cancellation activity represented a significant proportion of transactions, suggesting notable levels of post-purchase order reversal behaviour.
+- Return and cancellation activity represented a significant proportion of transactions, suggesting high customer dissatisfaction.
 - Monthly sales trends demonstrated seasonal fluctuations, with noticeable variation in revenue performance throughout the year.
 - Product return activity was heavily influenced by a small number of bulk return events, creating significant outliers within the dataset.
-- Window functions and rolling averages provided clearer visibility into underlying sales trends beyond short-term monthly volatility.
-- Considerable data cleaning was required due to operational adjustment records and inconsistent transaction formatting within the raw dataset.
+- Window functions and rolling averages provided clearer visibility into underlying sales trends beyond short-term trends.
 
 ---
 
@@ -129,9 +126,7 @@ The cleaning process involved:
 
 - Investigate products and operational processes associated with high return and cancellation activity.
 - Develop customer retention strategies focused on repeat purchasers and high-value customers.
-- Expand international sales activity to reduce reliance on the UK market.
 - Align inventory planning and marketing activity with seasonal demand trends.
-- Improve transaction validation and data governance processes to reduce operational data inconsistencies.
 
 ---
 
@@ -141,4 +136,4 @@ The cleaning process involved:
 - Large bulk-order returns created significant outliers that may distort product-level return analysis.
 - The dataset does not include product categories, profit margins, or operational fulfilment data.
 - Return transactions may include operational adjustments in addition to true customer-driven returns.
-- The analysis represents gross sales activity rather than full accounting-level net sales reconciliation.
+- IMPORTANT: The analysis represents gross sales activity rather than full accounting-level net sales reconciliation due to these limitations.
