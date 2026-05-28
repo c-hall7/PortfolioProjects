@@ -1,4 +1,4 @@
-# 📊 Superstore Sales Dashboard (Power BI Portfolio Project)
+# 📊 Superstore Sales Dashboard (Portfolio Project)
 
 ## 📌 Project Overview
 
@@ -6,12 +6,12 @@ This project explores retail sales performance data using an interactive Power B
 
 The project was completed using Microsoft Power BI and focuses on practical business intelligence workflows including:
 
-* data cleaning,
-* dimensional modelling,
-* dashboard design,
-* DAX calculations,
-* data visualisation,
-* and insight communication.
+- data cleaning,
+- dimensional modelling,
+- dashboard design,
+- DAX calculations,
+- data visualisation,
+- and insight communication.
 
 The goal of this project was to strengthen my real-world business intelligence and dashboard development skills while building a professional data analytics portfolio.
 
@@ -23,12 +23,12 @@ Source: Kaggle — [Superstore Sales Dataset](https://www.kaggle.com/datasets/la
 
 The dataset contains information on:
 
-* Customer orders and transactions
-* Product categories and sub-categories
-* Sales, profit, discount, and shipping costs
-* Customer segmentation and regional markets
-* Shipping methods and order priorities
-* Order and shipping dates
+- Customer orders and transactions
+- Product categories and sub-categories
+- Sales, profit, discount, and shipping costs
+- Customer segmentation and regional markets
+- Shipping methods and order priorities
+- Order and shipping dates
 
 ---
 
@@ -36,32 +36,24 @@ The dataset contains information on:
 
 ### Software
 
-* Microsoft Power BI
+- Microsoft Power BI
 
 ### Data Modelling
 
-* Star Schema Design
-* Fact & Dimension Table Modelling
-* Relationship Management
-
-### DAX Measures
-
-* Total Sales
-* Total Profit
-* Profit Margin %
-* Average Discount %
-* Customer Segmentation Metrics
+- Star Schema Design
+- Fact & Dimension Table Modelling
+- Relationship Management
 
 ### Skills Demonstrated
 
-* Data Cleaning
-* Dimensional Modelling
-* Dashboard Design
-* Data Visualisation
-* KPI Reporting
-* Time Series Analysis
-* Business Intelligence Reporting
-* Insight Communication
+- Data Cleaning
+- Dimensional Modelling
+- Dashboard Design
+- Data Visualisation
+- KPI Reporting
+- Time Series Analysis
+- Business Intelligence Reporting
+- Insight Communication
 
 ---
 
@@ -73,47 +65,47 @@ The dataset was transformed into a star schema model consisting of:
 
 #### FactSales
 
-* CustomerID
-* ProductKey
-* order_id
-* order_date
-* ship_date
-* order_priority
-* ship_mode
-* shipping_cost
-* profit
-* sales
-* quantity
-* discount
+- CustomerID
+- ProductKey
+- order_id
+- order_date
+- ship_date
+- order_priority
+- ship_mode
+- shipping_cost
+- profit
+- sales
+- quantity
+- discount
 
 ### Dimension Tables
 
 #### DimCustomer
 
-* CustomerID
-* customer_name
-* country
-* state
-* region
-* market
-* segment
+- CustomerID
+- customer_name
+- country
+- state
+- region
+- market
+- segment
 
 #### DimProduct
 
-* ProductKey
-* product_id
-* product_name
-* category
-* sub_category
+- ProductKey
+- product_id
+- product_name
+- category
+- sub_category
 
 #### DimDate
 
-* Date
-* Month
-* MonthNumber
-* MonthYear
-* Quarter
-* Year
+- Date
+- Month
+- MonthNumber
+- MonthYear
+- Quarter
+- Year
 
 ---
 
@@ -121,92 +113,81 @@ The dataset was transformed into a star schema model consisting of:
 
 ### 1. Executive Overview
 
-* KPI summary cards for sales, profit, and customer metrics
-* Sales and profit trends over time
-* Monthly performance comparison visuals
-* Regional and segment-level business insights
+- KPI summary cards for sales, profit, orders and profit margin
+- Sales and profit trends over the last 12 months
+- Sales over time trends
+- Regional business insights
 
 ### 2. Product Overview
 
-* Product category and sub-category sales distribution
-* Profitability analysis across categories
-* Discount vs profit analysis
-* Product performance trend visualisations
+- Product category and sub-category sales distribution
+- Profitability analysis across categories
+- Discount vs profit analysis
+- Product performance trend visualisations
 
 ### 3. Product Rankings
 
-* Top 10 products by sales
-* Bottom 10 products by profit
-* Product-level performance comparisons
+- Top 10 products by sales
+- Bottom 10 products by profit
+- Product-level performance comparisons
 
 ### 4. Customer & Segmentation Analysis
 
-* Top customer analysis
-* Customer segment performance
-* Regional customer distribution
-* Customer profitability insights
+- Top customer analysis
+- Customer segment performance
+- Regional sales distribution
+- Customer profitability insights
 
-### 5. Shipping & Operations
+### 5. Time Intelligence
 
-* Shipping mode analysis
-* Order priority trends
-* Shipping cost comparisons
-* Operational performance insights
-
+- Profit over time analysis
+- Sales over time analysis
+- Time slicers for year, quarter and month
+  
 ---
 
 ## 🔍 Key Questions Explored
 
 ### 1. Which product categories generate the highest sales and profit?
 
-* Compared category and sub-category sales performance
-* Investigated profitability differences between product groups
+- Compared category and sub-category sales performance
+- Investigated profitability differences between product groups
 
 ### 2. Which products are the best and worst performers?
 
-* Identified top-performing products by revenue
-* Analysed products generating low or negative profit
+- Identified top-performing products by revenue
+- Analysed products generating low or negative profit
 
 ### 3. Do discounts negatively impact profitability?
 
-* Compared average discount rates across sub-categories
-* Investigated the relationship between discounts and profit margins
+- Compared average discount rates across sub-categories
+- Investigated the relationship between discounts and profit margins
 
 ### 4. Which customer segments and regions generate the most revenue?
 
-* Compared sales across customer segments
-* Analysed regional performance trends and market distribution
+- Compared sales across customer segments
+- Analysed regional performance trends and market distribution
 
 ### 5. How do sales and profits change over time?
 
-* Analysed monthly sales trends
-* Examined seasonal patterns and time-based performance changes
-
-### 6. How do shipping methods and operational choices affect business performance?
-
-* Compared shipping costs and profitability by shipping mode
-* Investigated operational trends across order priorities
+- Analysed monthly sales trends
+- Examined seasonal patterns and time-based performance changes
 
 ---
 
 ## 📈 Key Insights
 
-* Sales were concentrated within a small number of high-performing product categories and products.
-* Some high-revenue products generated low profitability due to discounting strategies.
-* Technology products generally produced stronger profit margins compared to Furniture categories.
-* Customer purchasing behaviour varied significantly between market segments and regions.
-* Monthly sales trends showed clear fluctuations throughout the year, suggesting seasonal demand patterns.
-* Certain shipping methods incurred significantly higher costs without proportional increases in profitability.
-* A small proportion of customers contributed a disproportionately large percentage of total revenue.
-
+- Profits were concentrated within a small number of high-performing product categories and products.
+- Some high-revenue products generated low profitability due to discounting strategies.
+- Technology products generally produced stronger profit margins compared to Furniture categories.
+- Monthly sales trends showed clear fluctuations throughout the year, suggesting seasonal demand patterns.
+- Consumers made up majority of overall sales, totalling more than Corporate and Home Office sales combined.
+  
 ---
 
 ## ⚠️ Limitations
 
-* The dataset represents historical transactional data and may not reflect current retail market conditions.
-* Customer IDs and Product Keys were artificially generated due to missing unique identifiers in the original dataset.
-* The dataset does not include external business factors such as marketing spend, inventory levels, or supplier costs.
-* Some operational insights are limited by the absence of delivery duration and return/refund information.
-* Time-based analysis was constrained to the available historical data range.
-
----
+- The dataset represents historical transactional data and may not reflect current retail market conditions.
+- Customer IDs and Product Keys were artificially generated due to missing unique identifiers in the original dataset.
+- The dataset does not include external business factors such as marketing spend, inventory levels, or supplier costs.
+- Time-based analysis was constrained to the available historical data range.
