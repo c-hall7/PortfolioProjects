@@ -42,6 +42,7 @@ The analysis focuses primarily on the Sales and Production schemas, including:
 
 ### Data Visualisation
 - Microsoft Power BI
+- [Simple Modern Dark Power BI Theme Template](https://community.fabric.microsoft.com/t5/Themes-Gallery/Simply-Modern-Dark/td-p/2088606)
 
 ### Skills Demonstrated
 - Data Profiling
